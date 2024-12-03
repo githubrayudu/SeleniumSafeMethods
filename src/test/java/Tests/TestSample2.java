@@ -1,17 +1,8 @@
 package Tests;
 
 import org.testng.annotations.Test;
-import java.time.Duration;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
-
-import utilityMethod.BaseDriver;
-import utilityMethod.SafeAlerts;
-import utilityMethod.SafeClick;
 import utilityMethod.SafeMethods;
-import utilityMethod.SafeScrolling;
-import utilityMethod.SafeSendKeys;
 
 public class TestSample2 extends SafeMethods {
 
@@ -41,9 +32,7 @@ public class TestSample2 extends SafeMethods {
 		driver.get("https://demo.automationtesting.in/Alerts.html");		
 		//OK and Dismiss alert 
 		safeClickLinkText(5, "Alert with OK & Cancel");
-		SafeClick.safeClickClassName(3,"btn-primary");
 //		SafeAlerts.safeAlertsAccept(3);
-		SafeAlerts.safeAlertsDismiss(2);
 
 	}
 	
